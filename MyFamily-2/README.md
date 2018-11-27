@@ -16,6 +16,21 @@ Note: state management is a big deal in applications. In this course I don't foc
 and therefore I took the easiest way to do the state management. This is not the effcient or the best parctive way to 
 do it. Useally, I preffer to use NGRX for my state management. 
 
+### Generate services 
+In this step all service will use only mock data.
+Service provide its data with observalbe.
+For the mock data we will use BehaviorSubject which save its last data and return in for new subscribers. 
+See [BehaviorSubject](http://reactivex.io/rxjs/manual/overview.html#behaviorsubject)
+
+#### FamilMembersService
+This service will provide a list of all family members.
+each member have his name, phone and location.
+
+
+```
+ionic generate service services/familyMemebers
+```
+
 ### Chat
 
 ### Location

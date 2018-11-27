@@ -1,9 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>family</ion-title>
+    <ion-title>Family</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+    <ion-grid>
+        <ion-row *ngFor="let member of familyMembers">
+          <ion-col col-6>
+              {{member.name}}
+          </ion-col>
+          <ion-col col-6 text-right>
+              <a href="tel:{{member.phone}}">
+                {{member.phone}} 
+                <ion-icon name="call"></ion-icon> 
+              </a>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 </ion-content>
