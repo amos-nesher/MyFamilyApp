@@ -22,10 +22,13 @@ Service provide its data with observalbe.
 For the mock data we will use BehaviorSubject which save its last data and return in for new subscribers. 
 See [BehaviorSubject](http://reactivex.io/rxjs/manual/overview.html#behaviorsubject)
 
-#### FamilMembersService
+## Family
+In this page we will display the family member with their phones number.
+User will be able to 'tap' on the phone number and it will call the family member using the phone ability to make a phone call. 
+
+#### FamilyMembersService
 This service will provide a list of all family members.
 each member have his name, phone and location.
-
 
 ```
 ionic generate service services/familyMemebers
