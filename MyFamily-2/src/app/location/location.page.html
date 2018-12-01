@@ -6,4 +6,13 @@
 
 <ion-content padding>
     <div #map id="map" class="map"></div>
+
+    <div class="members">
+      <div *ngFor="let member of familyMembers" 
+           class="member"
+           (click)="showMemeber(member)">
+           <ion-icon name="pin" class="pin"></ion-icon> 
+           {{member.name}}
+      </div>
+    </div>
 </ion-content>

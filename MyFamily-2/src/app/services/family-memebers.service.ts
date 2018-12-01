@@ -1,27 +1,50 @@
 import { Injectable } from '@angular/core';
 import { Subject, BehaviorSubject } from 'rxjs';
 
+export interface Position {
+  lat: number;
+  lng: number;
+}
+
 export interface FamilyMember {
+  id: string;
   name: string;
   phone: string;
+  location?: Position;
 }
 
 const mockData: Array<FamilyMember> = [
   {
+    id: "id-1",
     name: 'Amos',
-    phone: '0546372704'
+    phone: '0546372704',
+    location: {
+      lat: 31.895432, lng: 34.816227
+    }
   },
   {
+    id: "id-2",
     name: 'Wife',
-    phone: '0541112222'
+    phone: '0541112222',
+    location: {
+      lat: 31.900615, lng: 34.809511
+    }
   },
   {
+    id: "id-3",
     name: 'Boy',
-    phone: '0542223333'
+    phone: '0542223333',
+    location: {
+      lat: 32.013023, lng: 34.774941
+    }
   },
   {
+    id: "id-4",
     name: 'Girl',
-    phone: '0544445555'
+    phone: '0544445555',
+    location: {
+      lat: 29.557777, lng: 34.956414
+    }
   }
 ]
 
