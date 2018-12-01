@@ -37,12 +37,18 @@ ionic generate service services/familyMemebers
 ### Chat
 
 ### Location
+User Google Map to show family members locations.
+Each location will be shown with Map Marker.
 
 #### Info
 * Google Maps API
 * Google Maps native vs. Embeded
 
-#### Steps
+#### Google Map API 
+Need to open an account.
+Set free trial for unlimited maps calls per day.
+
+##### Set the map
 1. Goto https://console.developers.google.com/
 2. Start new project
 3. Enable 'Google Maps JavaScript API'
@@ -53,3 +59,5 @@ ionic generate service services/familyMemebers
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_APY_KEY"></script>
 ```
 7. Edit the location component (html, css and component TS).
+
+##### set the Markers
