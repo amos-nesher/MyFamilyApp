@@ -11,7 +11,8 @@
       <div *ngFor="let member of familyMembers" 
            class="member"
            (click)="showMemeber(member)">
-           <ion-icon name="pin" class="pin"></ion-icon> 
+           <ion-icon name="pin" class="pin" 
+                     [color]="member.locationEnable ? 'success' : 'danger'"></ion-icon> 
            {{member.name}}
       </div>
     </div>

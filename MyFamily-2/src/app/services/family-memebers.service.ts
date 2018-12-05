@@ -11,6 +11,7 @@ export interface FamilyMember {
   name: string;
   phone: string;
   location?: Position;
+  locationEnable: boolean;
 }
 
 const mockData: Array<FamilyMember> = [
@@ -20,7 +21,8 @@ const mockData: Array<FamilyMember> = [
     phone: '0546372704',
     location: {
       lat: 31.895432, lng: 34.816227
-    }
+    },
+    locationEnable: true,
   },
   {
     id: "id-2",
@@ -28,7 +30,8 @@ const mockData: Array<FamilyMember> = [
     phone: '0541112222',
     location: {
       lat: 31.900615, lng: 34.809511
-    }
+    },
+    locationEnable: true,
   },
   {
     id: "id-3",
@@ -36,7 +39,8 @@ const mockData: Array<FamilyMember> = [
     phone: '0542223333',
     location: {
       lat: 32.013023, lng: 34.774941
-    }
+    },
+    locationEnable: true,
   },
   {
     id: "id-4",
@@ -44,7 +48,8 @@ const mockData: Array<FamilyMember> = [
     phone: '0544445555',
     location: {
       lat: 29.557777, lng: 34.956414
-    }
+    },
+    locationEnable: false,
   }
 ]
 
