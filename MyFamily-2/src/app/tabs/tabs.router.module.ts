@@ -12,35 +12,46 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: '',
-        redirectTo: '/tabs/(chat:chat)',
-        pathMatch: 'full',
-      },
-      {
         path: 'chat',
-        outlet: 'chat',
-        component: ChatPage
+        children: [
+          {
+            path: '',
+            loadChildren: '../chat/chat.module#ChatPageModule'
+          }
+        ]
       },
       {
         path: 'tasks',
-        outlet: 'tasks',
-        component: TasksPage
+        children: [
+          {
+            path: '',
+            loadChildren: '../tasks/tasks.module#TasksPageModule'
+          }
+        ]
       },
       {
         path: 'location',
-        outlet: 'location',
-        component: LocationPage
+        children: [
+          {
+            path: '',
+            loadChildren: '../location/location.module#LocationPageModule'
+          }
+        ]
       },
       {
         path: 'family',
-        outlet: 'family',
-        component: FamilyPage
+        children: [
+          {
+            path: '',
+            loadChildren: '../family/family.module#FamilyPageModule'
+          }
+        ]
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/(chat:chat)',
+    redirectTo: '/tabs/chat',
     pathMatch: 'full'
   }
 ];

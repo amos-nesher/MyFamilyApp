@@ -1,36 +1,22 @@
 <ion-tabs>
-
-  <ion-tab tab="chat">
-    <ion-router-outlet name="chat"></ion-router-outlet>
-  </ion-tab>
-  <ion-tab tab="tasks">
-    <ion-router-outlet name="tasks"></ion-router-outlet>
-  </ion-tab>
-  <ion-tab tab="location">
-    <ion-router-outlet name="location"></ion-router-outlet>
-  </ion-tab>
-  <ion-tab tab="family">
-    <ion-router-outlet name="family"></ion-router-outlet>
-  </ion-tab>
-
   <ion-tab-bar slot="bottom">
 
-    <ion-tab-button tab="home" href="/tabs/(chat:chat)">
+    <ion-tab-button tab="chat" >
       <ion-icon name="chatboxes"></ion-icon>
       <ion-label>Chat</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="tasks" href="/tabs/(tasks:tasks)">
+    <ion-tab-button tab="tasks" >
       <ion-icon name="checkmark-circle"></ion-icon>
       <ion-label>Tasks</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="location" href="/tabs/(location:location)">
+    <ion-tab-button tab="location">
       <ion-icon name="globe"></ion-icon>
       <ion-label>Location</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="family" href="/tabs/(family:family)">
+    <ion-tab-button tab="family" >
       <ion-icon name="contacts"></ion-icon>
       <ion-label>Family</ion-label>
     </ion-tab-button>

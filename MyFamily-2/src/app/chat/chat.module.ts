@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
 import { ChatPage } from './chat.page';
+import { ChatMessageComponent } from '../components/chat-message/chat-message.component';
+import { SendMessageComponent } from '../components/send-message/send-message.component';
 
 const routes: Routes = [
   {
@@ -19,8 +21,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ReactiveFormsModule
   ],
-  declarations: [ChatPage]
+  declarations: [ChatPage, ChatMessageComponent, SendMessageComponent]
 })
 export class ChatPageModule {}

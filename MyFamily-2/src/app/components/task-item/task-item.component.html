@@ -1,0 +1,29 @@
+<div class="container" [class.is-user]="isUser">
+  <div>
+
+  </div>
+  <div>
+    
+  </div>
+</div>
+
+
+<ion-item-sliding #item>
+    <ion-item>
+        <ion-checkbox ></ion-checkbox>
+        <div class="task-item-container">
+          <div class="task-text">{{task.text}}</div>
+          <div class="task-info">Assign to {{ownerName}} on {{task.time | date:"short"}}</div>
+        </div>
+        
+    </ion-item>
+
+    <ion-item-options side="start">
+      <ion-button color="danger" (click)="doDelete()">Delete</ion-button>
+    </ion-item-options>
+
+    <ion-item-options side="end">
+      <ion-button *ngIf="!task.complate" color="success" (click)="doComplate()">Complate</ion-button>
+      <ion-button *ngIf="task.complate" color="warning" (click)="doResume()">Resume</ion-button>
+    </ion-item-options>
+  </ion-item-sliding>

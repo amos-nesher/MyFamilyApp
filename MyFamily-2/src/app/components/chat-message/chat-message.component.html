@@ -1,0 +1,5 @@
+<div class="container" [class.is-user]="isUser">
+  <div class="meta-info name">{{senderName}}</div>
+  <div class="message">{{message.text}}</div>
+  <div class="meta-info time">{{message.time | date:"short"}}</div>
+</div>

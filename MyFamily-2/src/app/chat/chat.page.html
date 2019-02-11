@@ -4,6 +4,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content padding >
+  <div class="chat">
+      <div class="chat-container" #chatContainer>
+          <app-chat-message *ngFor="let message of chat"
+            [message]="message"
+            [senderName]="getSenderName(message)"
+            [isUser]="isUser(message)">
+          </app-chat-message>
+      </div>
+        
+      <app-send-message class="send-message" (send)="doSend($event)"></app-send-message>
+  </div>
 </ion-content>

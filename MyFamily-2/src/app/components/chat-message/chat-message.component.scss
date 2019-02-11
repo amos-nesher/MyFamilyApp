@@ -1,0 +1,26 @@
+.container {
+    margin-bottom: 16px;
+    padding: 5px;
+    width: 90%;
+    background-color: #f8ef98;
+    border-radius: 10px;
+
+    &.is-user {
+        margin-left: 10%;
+        text-align: right;
+        background-color: #bcf5a8;
+    }
+
+    .meta-info {
+        font-size: 12px;
+        opacity: 0.6;  
+    }
+
+    .name {
+        padding-bottom: 8px;    
+    }
+
+    .time {
+        padding-top: 8px;
+    }
+}

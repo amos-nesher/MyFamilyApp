@@ -47,7 +47,7 @@ Remove the pages Home, Contact and About files and folders.
 
 ### Deploy application on Android device
 
-#### Add the Android platform
+#### Add the Android platform (this taking some time)
 ionic cordova platform add android
 
 #### Build and deploy on your Android device

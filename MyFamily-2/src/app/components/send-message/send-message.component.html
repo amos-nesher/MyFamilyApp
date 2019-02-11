@@ -1,0 +1,4 @@
+<form class="container">
+  <textarea rows="3" class="send-input" (keyup.enter)="doSend()" [formControl]="message"></textarea>
+  <ion-icon name="arrow-dropright-circle" class="send-button" (click)="doSend()"></ion-icon> 
+</form>
